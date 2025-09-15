@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="public, max-age=31536000">
+<title>Uma Análise Comparativa em Tecnologias e Aplicações Emergentes em Bancos de Dados</title>
+<link rel="stylesheet" href="assets/css/styles.min.css">
+<link rel="preload" href="assets/css/styles.min.css" as="style">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/marked@4.0.12/lib/marked.min.js">
+
+<!-- <link rel="stylesheet" href="assets/css/styles.min.css"> -->
+<style>
+header {
+background-color: #2c3e50;color: #fff;
+padding: 1rem;
+text-align: center
+}
+nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 1rem
+}
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: 700
+}
+nav ul li a:hover {
+text-decoration: underline
+}
+           body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .keywords {
+            font-style: italic;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .figure {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+        }
+        .figure img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #f9f9f9;
+        }
+        table.comparison {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table.comparison th, table.comparison td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table.comparison th {
+            background-color: #f2f2f2;
+        }
+        ul.references {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.references li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="../index.html">Início</a></li>
+<li><a href="../about.html">Sobre</a></li>
+<li><a href="../portfolio.html">Portfólio</a></li>
+<li><a href="../contact.html">Contato</a></li>
+</ul>
+</nav>
+</header>
+<br><br>
+    <div class="container">
+        <h1>Uma Análise Comparativa em Tecnologias e Aplicações Emergentes em Bancos de Dados</h1>
+        
+        <p>Este artigo apresenta um estudo comparativo sob uma forma classificatória entre tipos de bancos de dados e tecnologias emergentes que vem revolucionando o mercado da Tecnologia da Informação "a internet das coisas" do inglês (Internet of Things, ou Iot), sem pretensão no aprofundamento teórico vou colocar esta questão partindo de sua relação com os bancos de dados proporcionando uma visão por etapas que envolve esta "facilitações" da "IOT".</p>
+        
+        <div class="keywords">
+            <strong>Palavras-chave:</strong> tipos banco de dados; tecnologias emergentes; internet das coisas.
+        </div>
+        
+        <p>O grande volume de informações processadas nos diversos setores da administração teve como conseqüência o desenvolvimento de novas tecnológicas e aperfeiçoamentos no setor de desenvolvimento de sistemas computadorizados, estas novas tecnologias emergiram pelo fato dos dados não serem mais os mesmos, se antigamente bastava dados numéricos e os alfanuméricos, no mundo atual e nas projeções futuras estes dados foram ampliados a uma gama infinita de tipos e características diferentes o qual proporcionou novas tecnologias de aplicações para os mais variados e diversos meios.</p>
+        
+        <p>Estas novas tecnologias surgiram para preencher as lacunas deixadas pelos SGBD tradicionais e convencionais, que, em alguns casos não conseguem satisfazer funcionalidades em SGBDs da forma que uma variedade de novas aplicações possa ter suporte, um exemplo são as novas tendências futuras onde vale destacar o termo "internet das coisas" (do inglês, Internet of Things) que vem se popularizando no mercado de TI.</p>
+        
+        <p>A infinidade de opções futuras que vem emergindo com a "IOT, internet de tudo ou internet das coisas", nos trás um alerta em termos, "tudo a mão a qualquer momento", o que nos faz refletir sobre como poderemos manter a integridade dos dados interligados a todo tipo de dispositivo, sensores e plataformas diferentes interconectadas a tudo e a todos que farão um fluxo de informação o qual formará cada vez mais a tendência a intersecção de *Bigdata a internet das coisas os quais segundo (GARTNER, 2016), trará novos desafios de TI em armazenamento de dados, integração e analytics.* Big Data é o termo que descreve o imenso volume de dados "estruturados e não estruturados" que impactam os negócios no dia a dia. Mas o importante não é a quantidade de dados. E sim o que as empresas fazem com os dados que é o que realmente importa.</p>
+        
+        <h2>Conceitos de banco de dados</h2>
+        
+        <p>Quando se tem um conjunto volumoso de informações as quais se quer manter e organizar como datas de emissão de notas fiscal, nome, endereço de funcionários, valores de salário etc.; deparamo-nos com aspectos como a dificuldade na utilização desses dados, surge à hipótese de organizar tais dados em uma base de dados "BD", a qual pode ser utilizada como repositório de dados onde os dados serão mantidos de uma forma organizada, permitindo que estes dados sejam relacionados com outros dados potencializados em um determinado contexto e ficando a disposição para realização de tarefas sobre estes dados tais como: consulta de dados, atualização de dados, incremento de dados no banco entre outras.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Traditional_View_of_Data_SVG.svg" alt="Banco de Dados exemplo simplificado visão externa simplificada">
+            Fig. Banco de Dados exemplo simplificado visão externa simplificada (fonte: Web).
+        </div>
+        
+        <h2>Sistemas de banco de dados</h2>
+        
+        <p>"Um sistema de banco de dados (SBD) é basicamente um sistema de manutenção de registros por computador" [DATE, 1991], que possui missão de armazenar os registros inseridos pelos usuários e recuperá-los quando solicitado. "Por estrutura de banco de dados entendemos os tipos de dados, relacionamentos e restrições que devem suportar os dados" [ELMASRI/NAVATHE, 2005]. "O sistema de bancos de dados pode ser considerado como uma sala de arquivos eletrônica" [Date, 1991].</p>
+        
+        <p>O banco de dados precisa que sejam realizadas algumas tarefas para manutenção de seus registros elementares para justificar sua utilização, para isto acontecer existe uma divisão de tarefas entre alguns componentes principais para estas ações ocorrerem: temos os "dados", como subsídios para outras tarefas; o "hardware" que providencia a realização das tarefas sobre os dados num sistema computacional; o "software" que provê a maneira, a ferramenta e o mecanismo de se determinar a realização das tarefas sobre os dados; as pessoas humanas "usuários" que determinam a realização de tais tarefas. Existe uma série de métodos, técnicas e ferramentas que visam sistematizar o desenvolvimento de sistemas de bancos de dados.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Process_of_database_design_v2.png" alt="Sistema de banco de Dados simplificado">
+            Fig Sistema de banco de Dados simplificado (fonte: Web).
+        </div>
+        
+        <h2>Sistemas gerenciadores de banco de dados</h2>
+        
+        <p>"Software que manipula todos os acessos ao banco de dados; proporciona "a interface de usuário ao sistema de banco de dados" [Date, 1991].</p>
+        
+        <p>Para manter operações como consulta relacionamentos entre estes dados no banco de dados precisaremos ter um maior controle e organização nestas operações e isto é proporcionado pelo sistema gerenciador de bancos de dados (SGBD), também chamado de (DBMS), (em inglês, Database Management System), neste sistema possui um "gerenciador" de um sistema de banco de dados que é um dos softwares nele utilizado, o qual permitirá manter nele uma organização em sua estrutura de armazenamento, incrementar sua quantidade de dados mantidos, modificarem seus valores, consultá-los, garantir sua integridade e prover sua segurança e concorrência de sua utilização entre outras, facilitando as tarefas dos usuários. O gerenciador de um sistema de banco de dados é um conjunto de programas "ferramentas" utilizados para construção, administração e gerenciamento de um banco de dados.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Relational_key_SVG.svg" alt="SGBD como exemplo simplificado">
+            Fig. SGBD como exemplo simplificado (fonte: Web).
+        </div>
+        
+        <h2>Alguns Tipos de Bancos de Dados</h2>
+        
+        <h3>Hierárquico</h3>
+        <p>Representa dado como uma estrutura em árvore, composto de uma hierarquia de registros de dados, representa um estilo de um organograma empresarial (EX: Diretoria - Seção - Setor etc...), o modelo é capaz de representar a organização de forma direta mas apresenta problemas ao aparecer em relações de hierarquias.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Hierarchical_Model.svg" alt="Banco de Dados Hierarquico como exemplo">
+            Fig. Banco de Dados Hierarquico como exemplo (fonte: Web).
+        </div>
+        
+        <h3>Rede</h3>
+        <p>Representa os dados como registros vinculados uns aos outros formando conjuntos comuns de dados. Existe uma similaridade muito grande entre o modelo hierárquico e o modelo em rede, pode-se entender o modelo em rede como uma generalização do modelo hierárquico.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Network_Model.svg" alt="Banco de Dados em Rede como exemplo simplificado de seus relacionamentos">
+            Fig. Banco de Dados em Rede como exemplo simplificado de seus relacionamentos (fonte: Web).
+        </div>
+        
+        <h3>Relacional</h3>
+        <p>Representa os dados como uma simples coleção de linhas e colunas em tabelas bidimensionais, porém elas se relacionam entre si, e dependendo desse relacionamento carregam dados de outras tabelas consigo como referência à tabela que se relaciona.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Emp_Tables_%28Database%29.PNG" alt="Banco de Dados Relacional exemplo de representação simplificada do relacionamento entre tabelas">
+            Fig. Banco de Dados Relacional exemplo de representação simplificada do relacionamento entre tabelas (fonte: Web).
+        </div>
+        
+        <h3>Orientado a objetos</h3>
+        <p>Representa os dados em um único objeto, dentro de propriedades que são acessadas com métodos. São bancos de dados para novos formatos de dados como gráficos, fotografias, vídeos, estes bancos de dados são um avanço em relação aos bancos de dados tradicionais, eles tem como possibilidade de utilizar de uma variedade de fontes de multimídia e produzir como saída um formato multimídia.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Object-Oriented_Model.svg" alt="Banco de Dados OO exemplo simples representação simplificada">
+            Fig. Banco de Dados OO exemplo simples representação simplificada (fonte: Web).
+        </div>
+        
+        <h3>Objeto-relacional</h3>
+        <p>Combina o modelo orientado a objeto com o modelo relacional. Isso é feito mapeando banco de dados e classes seguindo a mesma lógica. Há frameworks que faz esse trabalho, como o Hibernate para Java.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Database_models.jpg" alt="Banco de Dados Objeto-Relacional exemplo simples representação simplificada">
+            Fig. Banco de Dados Objeto-Relacional exemplo simples representação simplificada (fonte: Web).
+        </div>
+        
+        <h2>Tipos BD Quanto à Arquitetura</h2>
+        
+        <h3>Banco de Dados Centralizado</h3>
+        <p>É uma estrutura na qual todos os usuários do sistema acessam um mesmo servidor que está fisicamente localizado em um local único.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Traditional_View_of_Data_SVG.svg" alt="Banco de Dados centralizado exemplo simplificado">
+            Fig. Banco de Dados centralizado exemplo simplificado (fonte: Web).
+        </div>
+        
+        <h3>Banco de Dados Distribuído</h3>
+        <p>Segundo [ELMASRI e NAVATHE, 2005], "Podemos definir banco de dados distribuído (BDD) como uma coleção de múltiplos bancos de dados logicamente inter-relacionados distribuídos por uma rede de computadores".</p>
+        
+        <p>Este modelo traz a vantagem da computação (processamento) distribuída, onde vários computadores interconectados dividem um problema grande e intratável em partes menores e o resolve eficientemente de maneira coordenada.</p>
+        
+        <p>"Existem dois tipos de Bancos de Dados distribuídos, os heterogêneos e os homogêneos, o primeiro é composto por Banco de Dados diferentes, por exemplo, MySql e Oracle. Já os homogêneos, são compostos pelo mesmo Banco de Dados" [Elmasri, Navathe, 2000].O acesso ocorre por meio de uma rede de computadores, que pode ser em um mesmo espaço físico ou ligado através da rede mundial de computadores. Esse tipo de arquitetura é muito utilizado por grandes corporações que necessitam de um grande volume de informações, assim o BDD oferece uma maior confiabilidade, segurança e disponibilidade das informações.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/DistributedDB.png" alt="Banco de Dados Distribuído exemplo simplificado">
+            Fig. Banco de Dados Distribuído exemplo simplificado (fonte: Web).
+        </div>
+        
+        <h2>Tecnologias Emergentes em Banco de Dados</h2>
+        
+        <p>Os avanços tecnológicos aliado ao desenvolvimento de ferramentas para aplicações embutidas nos SGBDs fizeram com que os sistemas de bancos de dados tornarem-se parte dos sistemas de informação nas organizações, e, com o advento da distribuição e dos SGBDs cliente-servidor criou-se a possibilidade de distribuir o banco de dados a diversos sistemas de computador possibilitando a usuários locais acessar dados remotos usando as facilidades fornecidas pelo SGBD, como um cliente ou por meio dos novos recursos e tecnologias da WEB dinâmica.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Database_models.jpg" alt="Tecnologias Emergentes em bancos de dados">
+            Fig. Tecnologias Emergentes em bancos de dados (fonte: Web).
+        </div>
+        
+        <h3>Bancos de dados operacionais e banco de dados Data Warehouse</h3>
+        
+        <p>Os bancos de dados operacionais ou "transacionais" são os bancos de dados que armazenam as transações diárias da empresa, sendo utilizado por todos os funcionários de uma empresa para registrar e executar operações pré definida, seus dados podem sofrer mudanças constantes, as informações históricas não ficam armazenadas por muito tempo e geralmente este banco de dados não necessita de grande capacidade de armazenamento, já os bancos de dados Data Warehouse são derivados deste sistema para tomadas de decisão onde estes dados serão alocados para uma forma de dados "analítica", as quais têm a finalidade de atender as necessidades da gerência de uma empresa para suporte e a tomada de decisões importantes, estes bancos de dados necessitam grande capacidade de processamento e de armazenamento e as informações históricas são armazenadas por muitos anos, pode-se concluir que a Data Warehouse é um conjunto de técnicas, aplicações e banco de dados integrados para suporte a decisões importantes empresariais.</p>
+        
+        <div class="figure">
+            <table class="comparison">
+                <tr>
+                    <th>Característica</th>
+                    <th>Bancos de Dados Operacionais</th>
+                    <th>Bancos de Dados Data Warehouse</th>
+                </tr>
+                <tr>
+                    <td>Propósito</td>
+                    <td>Armazenar transações diárias</td>
+                    <td>Suporte a decisões, análise</td>
+                </tr>
+                <tr>
+                    <td>Mudanças nos Dados</td>
+                    <td>Mudanças constantes</td>
+                    <td>Dados estáveis, históricos</td>
+                </tr>
+                <tr>
+                    <td>Armazenamento de Histórico</td>
+                    <td>Não por muito tempo</td>
+                    <td>Por muitos anos</td>
+                </tr>
+                <tr>
+                    <td>Capacidade de Armazenamento</td>
+                    <td>Não grande</td>
+                    <td>Grande capacidade</td>
+                </tr>
+                <tr>
+                    <td>Processamento</td>
+                    <td>Transacional</td>
+                    <td>Alta capacidade de processamento</td>
+                </tr>
+            </table>
+            Fig. BD Operacionais x BD Data Warehouse características (fonte: Web).
+        </div>
+        
+        <h3>Datas Warehouse e Data Mining</h3>
+        
+        <p>Os bancos de dados Data Warehouse como mencionado anteriormente ele extrai e armazena informações importantes de vários bancos de dados de uma organização sejam eles operacionais ou externos etc.; estes dados são organizados em sua base de dados em formas de catálogos, com índices e assuntos pré-definidos por técnicas avançadas, prontos para serem utilizados por gerentes e profissionais da empresa para data "mining", processamento analítico online, os Data Warehouse podem ser subdivididos ainda em data "marts", as quis guardam subconjuntos de dados da data warehouse com uma ordem específica como um departamento ou um processo de negócios etc.</p>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Data_warehouse_architecture.jpg" alt="BD Data Warehouse e Data Mining exemplo simplificado">
+            Fig. BD Data Warehouse e Data Mining exemplo simplificado (Fonte Web).
+        </div>
+        
+        <h3>Internet of Things (IOT)</h3>
+        
+        <div class="figure">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Internet_of_Things_using_NEST.png" alt="IOT – (Internet of Things) exemplo simplificado">
+            Fig. IOT – (Internet of Things) exemplo simplificado (Fonte Web).
+        </div>
+        
+        <p>Primeiro vamos abordar do que significa este termo cada vez mais popular entre os meios de TI, internet das coisas ou do inglês (IOT - Internet of Things), se trata de uma nova tendência tecnológica em que "todos estarão conectados a tudo", será uma nova plataforma que complementará aplicativos de rede e a arquitetura de serviços; gerenciamento, segurança, integração e outras tecnologias que farão parte de um novo cenário para equipes da tecnologia da informação que terão um desafio na implantação de uma nova arquitetura tecnológica a qual tornará até 2020 segundo perspectivas a "IOT", uma nova realidade na forma de comunicação para uma nova internet futura.</p>
+        
+        <p>Segundo site Startupi que acompanhou o Symposium/ITxpo 2015, encontro de CIOs e executivos estratégicos de TI, organizado pelo Gartner, líder mundial em pesquisa e aconselhamento sobre tecnologia. O Gartner define como estratégias as tendências tecnológicas que possuem potencial de impacto significativo para as organizações. Fatores que denotam esse impacto incluem a elevada possibilidade de Interferência nos negócios e nos usuários finais ou na TI. Segundo David Cearley, Vice-Presidente (Fellow) do Gartner, essas tendências moldarão as oportunidades de negócios digitais até 2020.</p>
+        
+        <p>Segundo artigo publicado ainda no site "Startupi" pela jornalista "Fernanda Santos" entre tendências estão as "malhas de dispositivos" os quais segundo artigo se refere a um conjunto extenso de pontos utilizados para acessar aplicativos móveis, wearables (tecnologias para vestir), aparelhos eletrônicos de consumo domésticos, dispositivos automotivos e ambientais - tais como os sensores da internet das coisas (IOT).</p>
+        
+        <p>Segundo, Cearley "o foco está no usuário móvel, que é cercado por "uma malha de dispositivos que se estende muito além dos meios tradicionais"</p>
+        
+        <p>Conforme artigo as previsões de Gartner, as arquiteturas de sistemas avançado de computação e as malhas digitais associadas a maquinas inteligentes acionará um impulso em arquitetura neuromórfica ultra eficientes e de alta potência as quais serão alimentadas por matrizes de portas programáveis em campo "FPGA" e possibilitaram ganhos significativos, como a execução em velocidades de mais de um "teraflop" com alta eficiência energética.</p>
+        
+        <p>Neste artigo procurei fazer um rápido resumo nas tendências correlacionando as tecnologias de bancos de dados, arquiteturas e acessos a estes dados, suas projeções futuras diante de novos dispositivos que farão conexão com a "internet das coisas", onde podemos perceber que as empresas terão que garantir um fluxo mútuo de dados que irá impulsionar a atividade destes dispositivos, pode-se citar como um exemplo as companhias de energia elétrica com sistemas inteligentes de medição instalados nas residências a qual estão conectada, os dados de medição terão de fazer um "upload" os quais devem ser verificados a cada "x" tempo minutos, com respostas corretas enviadas de volta para estes medidores inteligentes, o exemplo da companhia de energia elétrica foi só para citar apenas um exemplo prático nas transformações futuras e o que implicará em novas tecnologias de bancos de dados, podemos perceber que teremos cada vez mais fluxo de dados e mais dispositivos como sensores e sistemas interligados, isto implicará em um maior controle sobre estes dados, temos um cenário futuro onde tudo estará conectado a tudo e teremos sérios riscos associados, riscos de falhas de software, invasões por rackers através de dispositivos domésticos com tecnologia "IOT" que vão desde aplicativos domiciliar interligados ao celular com dados oriundos de sensores inteligentes em vários eletrodomésticos e até mesmo no veiculo, lembrando que estaremos sendo informado através destes dispositivos a todo instante sobre dados como: temperatura da água da banheira, temperatura ambiente, condições de segurança da residência, se o pote de folhagem "X" está precisando de insumos e já temos exemplo na lavoura destes sensores a décadas e agora poderão estar conectados a smartphones, tablets etc. Teremos riscos de invasão coletiva por rackers sobre vários destes itens ao mesmo tempo, portanto devemos estar preparados para esta nova realidade e considerar estes aspectos, isto deixa uma visão de uma perspectiva de insegurança futura, esses fluxos de dados cada vez maior de dispositivos conectados devem ser protegidos contra perda e acesso não autorizado, deve haver uma proteção quase contínua, o uso de criptografia seria uma das maneiras apropriada para proteger estes dados contra estes acessos e até mesmo para os dados armazenados em nuvens, devem ter estes mesmos nível de proteção, caso contrário as organizações não serão capazes de tirar o máximo proveito deste novo potencial da "IOT", e na era em que tudo deverá estar interligado isto se tornará um problema ao invés de uma oportunidade para as empresas que estarão se adaptando a estas novas tendências tecnológicas.</p>
+        
+        <p>Segundo EMC o qual publica um estudo Digital Universe Anuais e que tem pesquisas fornecidas pelo IDC, estima-se que a quantidade de dados será superior a 40 trilhões de gigabytes até 2020, segundo instituto a estratégia de dados para IOT envolve coleta, processamento, distribuição e consumo de dados, como exemplo citado um carro pode produzir apenas um MB de dados por dia, mas haverá milhões de carros com tais tecnologias. Segundo artigo [1] na pesquisa é preciso entender e gerenciar o fluxo de dados de milhões de terminais carregados de sensores, filtrando e processando os dados para ações locais e movendo-os por uma série de redes de conectividade para a nuvem a qual será usada para armazenamento e processamento destes dados e de lá enviar os resultados para vários pontos de consumo de dado do usuário (como smartphones), será integrado alguns desses dados em sistemas backend (como ERP, CRM ou Service Management) e banco de dados de dados NoSQL seria um dos mais populares para movimentar tais dados. Segundo artigo [1] ao qual achei interessante acrescentar a pesquisa será aproveitado para o gerenciamento de dados em tempo real algoritmos com capacidade de computação baseado em novos chips de computador, segundo ainda o artigo faz referência que para uma "IOT" bem sucedida deve envolver: sistemas de aquisição de dados em tempo real; fluxo de dados; armazenamento de dados; hubs de eventos; análise de big data para abordagens de aprendizado de maquina; proteção de dados; como criptografia; controles de acesso; detecção por invasão; novas formas de processamento destas informações e dados; para estes novos processamentos de objetos e dados exige abordagens de conectividade e diferentes soluções de IOT, cita-se como exemplo nestas novas abordagens para melhor compreensão de IOT exemplos como: drones voando ao redor de fazendas. Segundo artigo [1] Quem ira analisar as imagens e determinará a estratégia de irrigação adequada? Se o processamento de imagem em um drone de agricultura estiver vinculado a um sistema de irrigação inteligente, o vínculo entre levantamento da lavoura e irrigação de lavoura pode se tornar automatizado; medição preditiva com telemetria para um ativo industrial, citado no artigo como exemplo, significaria mudar o modelo de operações de serviço locais apenas como último recurso; o artigo cita ainda inter conectividade de acordo com determinado modelo de veiculo com o revendedor para prestação de serviço? Como o pagamento a partir de um aplicativo em uma interface no veiculo ou um sistema de ponto de vendas móvel ao qual mudaria as práticas de check-out atuais? Segundo artigo [1] repensar processo significa analisar restrições para uma estabilização global como transações em qualquer lugar, com o surgimento de objetos conectados "a tudo e a todos" surgirá um potencial para uso de um maior numero de interfaces de dispositivos adicionais como pontos de transações, tem-se a possibilidade de movimentar a interface de pagamento, com isto leva a se determinar que as compras online viessem para ficar com estas novas facilitações de navegação, procura e obtenção de produtos, negócios, o comercio integrará vendas a varejo online, móveis e na loja e se tornará ainda mais proeminente, pagamento sem contato com a tecnologia NFC que já é promissora se tornará ainda mais, segundo artigo a Apple Pay é adotada por muitos varejistas nos EUA e continua crescendo em numero. Segundo artigo ao qual enfatizo mais como exemplo de tendências emergentes cita que novos modelos de transações além do varejo podem ser adotados como pagamento para reparo de ativos os quais poderiam ser feitos eletronicamente com um estabelecimento de telemetria e diagnósticos do ativo quando fossem executados, assim, modelos de faturamento baseados em uso dependeriam de dados de telemetria e captura de dados de uso, geraria um potencial para surgir novos modelos de ativos como serviço, novos modelos de seguro poderiam usar telemática no veículo para fornecer mudanças dinâmicas gerando custos de serviço baseados no comportamento de condução, por outro lado essa ativação de transação deve ter uma privacidade em suas operações em nível de integridade e segurança. Concluísse, portanto que segurança é um critério importante para estas novas tecnologias emergentes que inclui novas tendências em operações envolvendo bancos de dados, "IOT" internet das coisas, controle de acesso de aplicativos até a segurança integrada nos diversos dispositivos que surgiram; segundo artigo citado como ênfase ainda [1], a "IOT" torna critico um vínculo entre infra-estrutura e segurança deixando uma preocupação de primordial importância neste aspecto, outra preocupação citada seria quanto aos sistemas legados os quais estariam mal estruturados para lidar com novas tecnologias os quais poderiam gerar falhas se não forem definidas interfaces apropriadas para novas operações e meios para garantia na segurança da mesma. Espero que este artigo tenha sido útil para o melhor entendimento do que é a internet das coisas</p>
+        
+        <h2>Referências</h2>
+        
+        <ul class="references">
+            <li><strong>Livro:</strong></li>
+            <li>DATE, C. J. Introdução a Sistemas de Banco de Dados. Rio de Janeiro: Campus, 2003.</li>
+            <li>DATE, C. J. Introdução a Sistemas de Bando de Dados, 2000 Editora Campus Ltda.</li>
+            <li>ELMASRI, Rames; NAVATHE, Shamkant B. Tecnologias e aplicações emergentes de bancos de dados in: Sistemas de bancos de dados. 4. Ed. São Paulo: Pearson Addison Wesley Bra, 2005.</li>
+            <li>HEUSER, C. A. Projeto de Banco de Dados. IV Edição. Porto Alegre: Ed. Sagra Luzzato, 2001.</li>
+            <li>MACHADO, Felipe Nery Rodrigues. Tecnologia e projeto de data warehouse: uma visão multidimensional. São Paulo: Érica, 2007.</li>
+            <li>SILBERSCHATZ, Abraham; KORHT,Henry F.;SUDARRSSHAN S. Sistema de Banco de Dados.Terceira edição, Editora Makron Books, 1999.</li>
+            <li>PRESSMAN, Roger S. Engenharia de Software. Makron Books. 1995.</li>
+            <li><strong>Documento eletrônico:</strong></li>
+            <li>http://startupi.com.br</li>
+            <li>http://imasters.com.br/gerencia-de-ti/tendencias/internet-das-coisas</li>
+            <li>http://www.monitis.com/blog/internet-of-things-is-now-bigger-than-big-data/</li>
+            <li>http://airccse.org/journal/jwmn/7215ijwmn03.pdf</li>
+            <li>http://imasters.com.br.</li>
+            <li>http://computerworld.com.br.</li>
+            <li>https://iotcomicbook.files.wordpress.com</li>
+            <li>https://endeavor.org.br/internet-das-coisas/</li>
+            <li>http://convergenciadigital.uol.com.br</li>
+            <li>https://pt.wikipedia.org/wiki/Internet_das_Coisas.</li>
+            <li>http://www.techtudo.com.br/noticias/noticia/2014/08/internet-das-coisas-entenda-o-conceito-e-o-que-muda-com-tecnologia.html.</li>
+            <li>http://sbc.org.br/images/flippingbook/computacaobrasil.</li>
+            <li>[1]http://www.ibm.com.</li>
+            <li>https://mitpress.mit.edu/books/internet-things.</li>
+            <li>http://www.sas.com/pt_br/insights/big-data/internet-das-coisas.html .</li>
+            <li>http://www.2neo.com.br/2015/12/23/banco-de-dados-e-internet-das-coisas.</li>
+            <li>http://www.iotwf.com/iotwf2014/sponsor_keynotes.</li>
+            <li>http://go.sap.com/brazil/documents/2016/05/0eea93b3-707c-0010-82c7-eda71af511fa.html.</li>
+            <li>https://www.wired.com/insights/2014/11/the-internet-of-things-bigger.</li>
+            <li>https://dzone.com/articles/a-database-platform-for-the-internet-of-things.</li>
+            <li>http://www.enterprisedb.com.</li>
+            <li>http://www.enterprisedb.com/postgres-plus-edb-blog/pierre-fricke/enterprise-data-platform-age-customer.</li>
+            <li>http://imasters.com.br/gerencia-de-ti/tendencias/internet-das-coisas-agora-e-maior-do-que-big-data/?trace=1519021197&source=single.</li>
+            <li>http://www.cienciaedados.com/database-of-things-dot-banco-de-dados-das-coisas.</li>
+            <li>http://www.enterprisedb.com/postgres-plus-edb-blog/mathieu-le-faucheur/database-and-iot-important-union.</li>
+        </ul>
+        
+        <footer>
+            Curso de Especiação em Gestão de Banco de Dados da ULBRA - UNIVERSIDADE LUTERANA DO BRASIL. E-mail: pauloalbertoweiss@gmail.com. Artigo realizado sob orientação do Prof. Dr. Alexandre Berg, apresentado como requisito para obtenção do título de Especialista em Gestão de Banco de dados.
+        </footer>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/lib/marked.min.js" async></script>
+<!-- Link removido: arquivo 'assets/js/main.min.js' não encontrado -->
+</body>
+<footer>
+<p>&copy; 2025 Meu Blog Pessoal. Todos os direitos reservados.</p>
+</footer>
+</html>
